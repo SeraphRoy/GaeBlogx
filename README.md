@@ -68,6 +68,8 @@ for any GitHub-hosted theme.
 # Notes
 Please specify Agolia specific configs in `_config.yml`, and other settings as well.
 
+Specify `blogname`, `blogabout`, `aboutme`, and `contactme` and `_config.yml`
+
 For reference, please take a look at my personal settings: https://github.com/SeraphRoy/SeraphRoy.github.io
 
 Credits: https://github.com/Gaohaoyang/gaohaoyang.github.io

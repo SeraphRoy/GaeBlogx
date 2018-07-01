@@ -3,8 +3,8 @@ layout: default
 ---
 <div class="page clearfix" index>
     <div class="left" >
-        <h1>SeraphRoy's Blog</h1>
-        <small>Notes, Word Salad, etc.</small>
+       <h1>{{ site.blogname }}</h1>
+       <small>{{ site.blogabout }}</small>
         <hr>
         <ul>
             {% for post in paginator.posts %}
