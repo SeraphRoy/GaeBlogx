@@ -1,10 +1,9 @@
 # Jekyll Theme GaeBlogx
 
-Credits: https://github.com/Gaohaoyang/gaohaoyang.github.io
+My personal blog Github Page: https://github.com/SeraphRoy/SeraphRoy.github.io
 
-Major features
+## Major features
 
-Modifications:
 - Categories, Tags, Archives
 - Site-wide search provided by Algolia and Simple Jekyll Search
 - Clean responsive design
@@ -65,3 +64,10 @@ for any GitHub-hosted theme.
 
 3. Add `remote_theme: "SeraphRoy/GaeBlogx"` to your
    `_config.yml` file. Remove any other `theme:` or `remote_theme:` entries.
+   
+# Nodes
+Please specify Agolia specific configs in `_config.yml`, and other settings as well.
+
+For reference, please take a look at my personal settings: https://github.com/SeraphRoy/SeraphRoy.github.io
+
+Credits: https://github.com/Gaohaoyang/gaohaoyang.github.io
