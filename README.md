@@ -1,9 +1,56 @@
-# SeraphRoy.github.io
+# Jekyll Theme GaeBlogx
 
-Adapted theme: https://github.com/Gaohaoyang/gaohaoyang.github.io and do some upgrades
+Credits: https://github.com/Gaohaoyang/gaohaoyang.github.io
+
+Major features
 
 Modifications:
-- Add sidebar search for title/tag/category/content
-- Add algolia search with search result highlight
+- Categories, Tags, Archives
+- Site-wide search provided by Algolia and Simple Jekyll Search
+- Clean responsive design
+- Disqus Comments and Google Analytics support
+- SEO best practices via Jekyll SEO Tag
 - Archive by month instead of year
-- SEO optimization
+- About page layout
+
+## Installation
+
+If you're running Jekyll v3.5+ and self-hosting you can quickly install the
+theme as a Ruby gem. If you're hosting with GitHub Pages you can install as a
+remote theme or directly copy all of the theme files (see [structure](#structure)
+below) into your project.
+
+### Ruby Gem Method
+
+1. Add this line to your Jekyll site's `Gemfile`:
+
+   ```ruby
+   gem "jekyll-theme-gaeblogx"
+   ```
+2. Add this line to your Jekyll site's `_config.yml` file:
+
+   ```yaml
+   theme: jekyll-theme-gaeblogx
+   ```
+
+2. Then run [Bundler](http://bundler.io/) to install the theme gem and dependencies:
+
+   ```terminal
+   bundle install
+   ```
+
+### GitHub Pages Method
+
+GitHub Pages has added [full support](https://github.com/blog/2464-use-any-theme-with-github-pages)
+for any GitHub-hosted theme.
+
+1. Replace `gem "jekyll"` with:
+
+   ```ruby
+   gem "github-pages", group: :jekyll_plugins
+   ```
+
+2. Run `bundle update` and verify that all gems install properly.
+
+3. Add `remote_theme: "SeraphRoy/GaeBlogx"` to your
+   `_config.yml` file. Remove any other `theme:` or `remote_theme:` entries.
