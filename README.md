@@ -20,6 +20,17 @@ theme as a Ruby gem. If you're hosting with GitHub Pages you can install as a
 remote theme or directly copy all of the theme files (see [structure](#structure)
 below) into your project.
 
+First have a `index.html` in your root folder, containing:
+
+```
+---
+layout: home
+paginate: true
+---
+```
+
+then:
+
 ### Ruby Gem Method
 
 1. Add this line to your Jekyll site's `Gemfile`:
