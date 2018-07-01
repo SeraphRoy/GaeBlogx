@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-gaeblogx"
-  spec.version       = "0.1.5"
+  spec.version       = "1.0"
   spec.authors       = ["Baby Pepper"]
   spec.email         = ["royxagain@gmail.com"]
 
@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["plugin_type"] = "theme"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|page|index.html|feed.xml|LICENSE|README.md|search_data.json)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README.md)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 3.8"
 
