@@ -65,7 +65,7 @@ for any GitHub-hosted theme.
 3. Add `remote_theme: "SeraphRoy/GaeBlogx"` to your
    `_config.yml` file. Remove any other `theme:` or `remote_theme:` entries.
    
-# Nodes
+# Notes
 Please specify Agolia specific configs in `_config.yml`, and other settings as well.
 
 For reference, please take a look at my personal settings: https://github.com/SeraphRoy/SeraphRoy.github.io
