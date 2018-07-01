@@ -16,8 +16,7 @@ My personal blog Github Page: https://github.com/SeraphRoy/SeraphRoy.github.io
 
 If you're running Jekyll v3.5+ and self-hosting you can quickly install the
 theme as a Ruby gem. If you're hosting with GitHub Pages you can install as a
-remote theme or directly copy all of the theme files (see [structure](#structure)
-below) into your project.
+remote theme or directly copy all of the files into your project.
 
 First have a `index.html` in your root folder, containing:
 
@@ -66,9 +65,12 @@ for any GitHub-hosted theme.
    `_config.yml` file. Remove any other `theme:` or `remote_theme:` entries.
    
 # Notes
+
 Please specify Agolia specific configs in `_config.yml`, and other settings as well.
 
-Specify `blogname`, `blogabout`, `aboutme`, and `contactme` and `_config.yml`
+Specify `blogname`, `blogabout`, in `_config.yml`
+
+You can create your own `about` page using `about` layout
 
 For reference, please take a look at my personal settings: https://github.com/SeraphRoy/SeraphRoy.github.io
 
