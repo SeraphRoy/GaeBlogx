@@ -1,16 +1,18 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "gaeblogx"
-  spec.version       = "0.1.0"
+  spec.name          = "jekyll-theme-gaeblogx"
+  spec.version       = "0.1.5"
   spec.authors       = ["Baby Pepper"]
   spec.email         = ["royxagain@gmail.com"]
 
-  spec.summary       = "Simple Jekyll Theme"
+  spec.summary       = "Jekyll theme with: tags, categories, archives, and searches"
   spec.homepage      = "https://github.com/SeraphRoy/GaeBlogx"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|page|js|index.html|feed.xml|LICENSE|README.md)!i) }
+  spec.metadata["plugin_type"] = "theme"
+
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|page|index.html|feed.xml|LICENSE|README.md|search_data.json)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 3.8"
 
