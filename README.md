@@ -42,7 +42,7 @@ then:
    theme: jekyll-theme-gaeblogx
    ```
 
-2. Then run [Bundler](http://bundler.io/) to install the theme gem and dependencies:
+2. Then run [Bundler](https://bundler.io/) to install the theme gem and dependencies:
 
    ```terminal
    bundle install
