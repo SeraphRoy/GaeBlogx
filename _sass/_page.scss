@@ -131,6 +131,13 @@
                     color: #223253;
                 }
             }
+            #search_box {
+               display: block;
+               margin: auto;
+               height: 16px;
+               border-radius: 5px;
+               border: solid 1px #BBB;
+            }
         }
         .content-ul {
             overflow-y: auto;
