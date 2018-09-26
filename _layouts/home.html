@@ -54,7 +54,43 @@ layout: default
             <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
             <span class="previous disable"><i class="fa fa-angle-left"></i></span>
           {% endif %}
-          <span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
+          <span class="page_number">
+             <script>
+                function isNum(val){
+                   if(val === "" || val ==null){
+                      return false;
+                   }
+                   if(!isNaN(val)){
+                      return true;
+                   }
+                   else{
+                      return false;
+                   }
+                }
+             </script>
+             <script>
+                function onPressEnter(){
+                   var pageid = document.getElementById("page_jumper_input").value
+                   if(isNum(pageid)==false){
+                      alert("Invalid Page Number!")
+                      return
+                   }
+                   number = parseInt(pageid)
+                   minn = 1
+                   maxn = {{paginator.total_pages}}
+                   if(number < minn)
+                      number = minn
+                   if(number > maxn)
+                      number = maxn
+                   if(number == 1)
+                      location.href='/'
+                   else
+                      location.href='/page'+number.toString()
+                }
+             </script>
+            <input id="page_jumper_input" onkeydown="if(event.keyCode==13) {onPressEnter()}"
+                  placeholder="{{ paginator.page }}">/{{ paginator.total_pages }}
+          </span>
           {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
             <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
