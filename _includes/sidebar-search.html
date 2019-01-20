@@ -5,21 +5,22 @@
 <div id="site_search">
     <input type="text" id="search_box" placeholder="Search..." >
 </div>
-
-<ul class="content-ul" id="search_results" recent></ul>
+<div id="search_results"></div>
 
 <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/stylesheets/main.css">
 <script type="text/javascript" src="{{ site.url }}/assets/js/search.js"></script>
-<script src="{{ site.url }}/assets/js/jekyll-search.min.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/node_modules/simpleblogsearch/index.js"></script>
 
-<script type="text/javascript">
-SimpleJekyllSearch({
-    searchInput: document.getElementById('search_box'),
-    resultsContainer: document.getElementById('search_results'),
-    json: '{{ site.baseurl }}/assets/search_data.json',
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-    noResultsText: 'No results found',
-    limit: 10,
-    fuzzy: false,
-})
+<script>
+SimpleBlogSearch({
+   searchDataPath: '{{ site.baseurl }}/assets/search_data.json',
+   dataType: 'json',
+   processDataFunc: function(data){ return data },
+   searchInputID: 'search_box',
+   resultsDivID: 'search_results',
+   resultULClass: 'content-ul search-ul content-side',
+   highlightKeywordClass: 'search_keyword',
+   limit: 4,
+
+});
 </script>
