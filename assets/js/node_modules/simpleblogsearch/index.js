@@ -14,7 +14,7 @@ var SimpleBlogSearch = function(args) {
          if ($("#" + args.searchInputID).length > 0) {
             $input.addEventListener('input', function () {
                var str = `<ul class="${args.resultULClass}">`;
-               var keywordRegex = new RegExp(this.value, "g")
+               var keywordRegex = new RegExp(this.value.toLowerCase(), "g")
                $resultContent.innerHTML = "";
                if (this.value.trim().length <= 0) {
                   return;
