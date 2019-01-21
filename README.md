@@ -5,7 +5,7 @@ My personal blog Github Page: https://github.com/SeraphRoy/SeraphRoy.github.io
 ## Major features
 
 - Categories, Tags, Archives
-- Site-wide search provided by Algolia and (Simple-Blog-Search)[https://github.com/SeraphRoy/SimpleBlogSearch]
+- Site-wide search provided by Algolia and [Simple-Blog-Search](https://github.com/SeraphRoy/SimpleBlogSearch)
 - Clean responsive design
 - Disqus Comments and Google Analytics support
 - SEO best practices via Jekyll SEO Tag
