@@ -28,20 +28,21 @@ var SimpleBlogSearch = function(args) {
                      data.title = "Untitled";
                   }
                   var data_title = data.title.trim().toLowerCase();
-                  var data_content = data.content.trim().toLowerCase();
+                  var data_content = data.content.trim().replace(/(\r\n\t|\n|\r\t|\s)+/gm, " ")
+                  var data_content_lowercase = data_content.toLowerCase()
                   var data_url = data.url;
                   var index_content = -1;
                   var first_occur = -1;
                   // only match artiles with not empty contents
-                  if (data_content !== '') {
+                  if (data_content_lowercase !== '') {
                      var matchTitles = data_title.match(keywordRegex)
-                     var matchContents = data_content.match(keywordRegex)
+                     var matchContents = data_content_lowercase.match(keywordRegex)
                      if (matchTitles != null) {
                         isMatch = true
                      }
                      if (matchContents != null) {
                         isMatch = true
-                        index_content = data_content.indexOf(matchContents[0]);
+                        index_content = data_content_lowercase.indexOf(matchContents[0]);
                      }
                      if (index_content < 0) {
                         index_content = 0
@@ -66,10 +67,10 @@ var SimpleBlogSearch = function(args) {
                            end = 100;
                         }
 
-                        if (end > content.length) {
-                           end = content.length;
+                        if (end > data_content.length) {
+                           end = data_content.length;
                         }
-                        var match_content = content.substring(start, end);
+                        var match_content = data_content.substring(start, end);
 
 
                         // highlight search result
