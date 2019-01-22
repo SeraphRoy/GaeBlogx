@@ -3,5 +3,5 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 *.gem
-_posts/
+_posts
 index.html
