@@ -88,8 +88,8 @@ var SimpleBlogSearch = function(args) {
                         str += `<p class="${args.resultParagraphClass}">${match_content}...</p>`
                      }
                      str += "</li>";
+                     count += 1;
                   }
-                  count += 1;
                   return count == args.limit;
                });
                str += "</ul>";
