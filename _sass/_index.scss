@@ -14,9 +14,9 @@
             }
             li {
                 color: #333;
-                h2 {
+                h1 {
                     border: none;
-                    font-size: 27px;
+                    font-size: 30px;
                     margin: 0;
                 }
                 .label {
@@ -36,14 +36,17 @@
                     }
                 }
                 .excerpt {
-                    h2 {
+                    h1 {
                         font-size: 24px;
                     }
-                    h3 {
+                    h2 {
                         font-size: 22px;
                     }
-                    h4 {
+                    h3 {
                         font-size: 20px;
+                    }
+                    h4 {
+                        font-size: 18px;
                     }
                 }
                 .read-all {
