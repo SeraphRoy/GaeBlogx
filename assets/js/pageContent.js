@@ -132,6 +132,7 @@ function moveTOC() {
         var TOCString = toc.innerHTML
         var contentUl = document.querySelector('#content-side')
         contentUl.insertAdjacentHTML('afterbegin', TOCString) //插入字符串
+        toc.remove()
 
         // if (!isAndroidWechatBrowser()) {
 
