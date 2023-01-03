@@ -11,6 +11,7 @@ My personal blog Github Page: https://github.com/SeraphRoy/SeraphRoy.github.io
 - SEO best practices via Jekyll SEO Tag
 - Archive by month instead of year
 - About page layout
+- Table of contents
 
 ## Installation
 
