@@ -127,8 +127,9 @@ function setContentMaxHeight() {
 //-------------post Content----------------------
 //将Content内容转移
 function moveTOC() {
-    if (document.querySelector('#markdown-toc') !== null) {
-        var TOCString = document.querySelector('#markdown-toc').innerHTML
+    var toc = document.querySelector('#toc') || document.querySelector('#markdown-toc')
+    if (toc !== null) {
+        var TOCString = toc.innerHTML
         var contentUl = document.querySelector('#content-side')
         contentUl.insertAdjacentHTML('afterbegin', TOCString) //插入字符串
 
