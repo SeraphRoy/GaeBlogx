@@ -21,5 +21,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "jekyll-paginate", "~> 1.1"
   spec.add_development_dependency "jekyll-seo-tag", "~> 2.4"
   spec.add_development_dependency "jekyll-algolia", "~> 1.1"
-  spec.add_development_dependency "jekyll-toc"
 end
